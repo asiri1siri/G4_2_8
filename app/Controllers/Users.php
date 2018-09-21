@@ -3,7 +3,7 @@
 use System\BaseController;
 use App\Helpers\Session;
 use App\Helpers\Url;
-use App\Models\User;
+use App\Models\Item;
 
 class Users extends BaseController
 {
