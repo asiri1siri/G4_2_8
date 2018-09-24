@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 25, 2018 at 01:23 AM
+-- Generation Time: Sep 25, 2018 at 01:30 AM
 -- Server version: 10.1.35-MariaDB
 -- PHP Version: 7.2.9
 
@@ -21,6 +21,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `mini`
 --
+CREATE DATABASE IF NOT EXISTS `mini` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `mini`;
 
 -- --------------------------------------------------------
 
@@ -28,6 +30,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `contacts`
 --
 
+DROP TABLE IF EXISTS `contacts`;
 CREATE TABLE `contacts` (
   `ENABLED` int(1) NOT NULL,
   `ID` int(3) NOT NULL,
@@ -58,6 +61,7 @@ INSERT INTO `contacts` (`ENABLED`, `ID`, `NAME`, `USERNAME`, `USERTYPE`, `EMAIL`
 -- Table structure for table `items`
 --
 
+DROP TABLE IF EXISTS `items`;
 CREATE TABLE `items` (
   `DELETED` int(1) NOT NULL,
   `ID` int(3) NOT NULL,
