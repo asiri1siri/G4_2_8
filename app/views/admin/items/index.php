@@ -22,12 +22,14 @@ include(APPDIR.'views/layouts/nav.php');
         <th>PARENT_ID</th>
         <th>ENTERED</th>
         <th>UPDATED</th>
+        <th>ACTIONS</th>
     </tr>
     <?php foreach($items as $row) { ?>
     <tr>
         <td><?=htmlentities($row->DELETED);?></td>
         <td><?=htmlentities($row->ID);?></td>
         <td><?=htmlentities($row->NAME);?></td>
+        <td><?=htmlentities($row->DESCRIPTION);?></td>
         <td><?=htmlentities($row->ITEMTYPE);?></td>
         <td><?=htmlentities($row->COND);?></td>
         <td><?=htmlentities($row->IS_CONTAINER);?></td>
